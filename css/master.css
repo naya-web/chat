@@ -1,0 +1,145 @@
+.content{
+    width: 500px;
+    position: relative;
+    height: 100vh;
+    background-color: #ffffff94;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translatex(-50%);
+    border: 1px solid #ddd;
+}
+.user{
+    display: flex;
+    padding: 0 10px;
+    background-color: #d5c9c96e;
+    position: absolute;
+    width: 96%;
+}
+.user .options{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+.content .user .options .opt{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 2px 2px;
+    background-color: #0d2a2ab5;
+}
+.image{
+    width: 70px;
+    height: 70px;
+     position: relative;
+     margin: 10px 10px 10px 0;
+}
+img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    
+}
+.content .user .image::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #4ad94a;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+   
+}
+.user-name{
+    width: 100%;
+    color: #0d2a2a;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.msging{
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.msging .emoji-button{
+    margin: 5px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    padding: 0px;
+    border: none;
+}
+.msging .emoji-list{
+    background-color: #d5c9c96e;
+    overflow: auto;
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    bottom: 50px;
+    left: 15px;
+    z-index: 3;
+    display: none;
+}
+.msging .emoji-list .emoji{
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    background-color: #d5c9c903;
+}
+.msging input[type="text"]{
+    border: 1px solid #777;
+    width: 65%;
+    margin: 0px 5px 10px 5px;
+    height: 25px;
+    border-radius: 15px;
+    padding: 5px;
+}
+.msging .fa-camera{
+    margin: 10px 5px 10px 5px;
+    cursor: pointer;
+}
+
+.attachment-label {
+    margin: 10px 5px 10px 5px;
+    cursor: pointer;
+  }
+  #attachment-input {
+    display: none;
+  }
+.msging .fa-paper-plane{
+    cursor: pointer;
+    color: #37474F;
+    margin: 10px 10px 0px 5px;
+    font-size: 18px;
+}
+.msging input[type="text"]:focus{
+    outline: 1px solid rgba(202, 192, 192, 0.948);
+}
+.msging input[type="file"]{
+    display: none;
+}
+.chat-box{
+    position: relative;
+    top: 100px;
+    width: 90%;
+    height: 75%;
+    overflow-y: auto;
+}
+.msgs{
+    width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 10px;
+    overflow-wrap: anywhere;
+    margin-bottom: 10px;
+}
